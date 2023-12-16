@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 3.0)
+project("test-bullet-sfml")
+add_executable(test-bullet-sfml src/main.cc)
+find_package(SFML 2.5.1 COMPONENTS graphics REQUIRED)
+target_link_libraries(test-bullet-sfml sfml-graphics sfml-window sfml-audio)
